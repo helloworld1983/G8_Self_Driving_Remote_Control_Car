@@ -1,6 +1,6 @@
-G8_Self_Driving_Remote_Control_Car: Grand Theft Auto
+#G8_Self_Driving_Remote_Control_Car: Grand Theft Auto
 
-Authors:
+###Authors:
 Neil Veira
 Yaron Milwid
 Milos Nikolic
@@ -15,9 +15,7 @@ To use this design, the following hardware is needed:
 - New Bright 1:16 F-150 toy car with remote controller 
 - Smartphone with camera and IP webcam app
 
-###########################################################################
-Description
-###########################################################################
+##Description
 
 The purpose of this design is to have the car autonomously navigate through 
 an obstacle course. A destination is defined by a white object while obstacles
@@ -44,9 +42,7 @@ The design operates as follows:
 - Flip switch V10 to enable human-controlled mode. The car can then bo controlled
   directly from the board using the pushbuttons. 
   
-###########################################################################
-How to use
-###########################################################################
+##How to use
 - Compile the design and write it to the Nexys4 DDR board
 - "Hijack" the car's remote controller by wiring the Forward, Backward, Left, 
   and Right signals to the pins C17, D18, E18, and G17.
@@ -56,41 +52,39 @@ How to use
 - Run the design and microblazes on the board  
 
 
-###########################################################################
-Repository Structure
-###########################################################################
+##Repository Structure
 
-- src: Vivado project files
---- project_1: Main project 
------ project_1.sdk: software files 
-------- MB0_n: SDK project for wifi microblaze 
---------- src/main.cc: Contains all relevant code for this component
-------- MB1: SDK project for path-finding microblaze
---------- src/hellowworld.c: Contains all relevant code for this component
------ project_1.srcs: hardware source files
+* src: Vivado project files
+  * project_1: Main project 
+    * project_1.sdk: software files 
+      * MB0_n: SDK project for wifi microblaze 
+        * src/main.cc: Contains all relevant code for this component
+      * MB1: SDK project for path-finding microblaze
+        * src/hellowworld.c: Contains all relevant code for this component
+    * project_1.srcs: hardware source files
     
---- img_proc_full: Packaged project containing the image processing IP 
------ jpeg.srcs/sim_1/imports/vhdl/jpeg_testbench.vhd: 
-------- sources_1: verilog & vhdl source files
---------- stream_jpg_yy_nv_mn_v1_0.v: top-level source file for sending data from 
+  * img_proc_full: Packaged project containing the image processing IP 
+    * jpeg.srcs/sim_1/imports/vhdl/jpeg_testbench.vhd: 
+      * sources_1: verilog & vhdl source files
+        * stream_jpg_yy_nv_mn_v1_0.v: top-level source file for sending data from 
           this microblaze
---------- image_processor_wrapper.v: top-level file for testing only. It gives 
+        * image_processor_wrapper.v: top-level file for testing only. It gives 
           input data from a pre-initialized bram. 
---------- image_processor.v: top-level file of image processor
---------- imports/mjpeg/: files for jpeg decoder
---------- edge_detector.v: self-explanatory
---------- vga_controller.v: controls RGB values to display
---------- vga_driver.vhd: IP from Rob Chapman, Altera University Program
---------- ip/: Xilinx ip 
+        * image_processor.v: top-level file of image processor
+        * imports/mjpeg/: files for jpeg decoder
+        * edge_detector.v: self-explanatory
+        * vga_controller.v: controls RGB values to display
+        * vga_driver.vhd: IP from Rob Chapman, Altera University Program
+        * ip/: Xilinx ip 
         
-------- sim_1: simulation files 
---------- imports/vhdl/jpeg_testbench.vhd: testbench for jpeg decoder
---------- wrapper_tb.v: testbench for image_processor_wrapper
+      * sim_1: simulation files 
+        * imports/vhdl/jpeg_testbench.vhd: testbench for jpeg decoder
+        * wrapper_tb.v: testbench for image_processor_wrapper
         
---- PWM: Packaged project containing the PWM controller IP
+  * PWM: Packaged project containing the PWM controller IP
   
---- vivado-library-master: Files needed for the wifi module
+  * vivado-library-master: Files needed for the wifi module
   
-- doc: Documentation including final report and presentation slides
+* doc: Documentation including final report and presentation slides
 
 
