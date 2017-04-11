@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="blk_mem_gen_0_synth_1" LaunchDir="C:/Users/yy/Desktop/to_be_sped_up/v2/temp532/project_1/project_1.runs/blk_mem_gen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="blk_mem_gen_2_synth_1" LaunchDir="C:/Users/yy/Desktop/to_be_sped_up/v2/temp532/project_1/project_1.runs/blk_mem_gen_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="blk_mem_gen_3_synth_1" LaunchDir="C:/Users/yy/Desktop/to_be_sped_up/v2/temp532/project_1/project_1.runs/blk_mem_gen_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="blk_mem_gen_4_synth_1" LaunchDir="C:/Users/yy/Desktop/to_be_sped_up/v2/temp532/project_1/project_1.runs/blk_mem_gen_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-	<Run Id="fifo_generator_0_synth_1" LaunchDir="C:/Users/yy/Desktop/to_be_sped_up/v2/temp532/project_1/project_1.runs/fifo_generator_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-
