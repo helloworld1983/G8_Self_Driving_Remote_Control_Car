@@ -1,6 +1,6 @@
-#G8_Self_Driving_Remote_Control_Car: Grand Theft Auto
+# G8_Self_Driving_Remote_Control_Car: Grand Theft Auto
 
-###Authors:
+### Authors:
 Neil Veira
 Yaron Milwid
 Milos Nikolic
@@ -15,7 +15,7 @@ To use this design, the following hardware is needed:
 - New Bright 1:16 F-150 toy car with remote controller 
 - Smartphone with camera and IP webcam app
 
-##Description
+## Description
 
 The purpose of this design is to have the car autonomously navigate through 
 an obstacle course. A destination is defined by a white object while obstacles
@@ -42,7 +42,7 @@ The design operates as follows:
 - Flip switch V10 to enable human-controlled mode. The car can then bo controlled
   directly from the board using the pushbuttons. 
   
-##How to use
+## How to use
 - Compile the design and write it to the Nexys4 DDR board
 - "Hijack" the car's remote controller by wiring the Forward, Backward, Left, 
   and Right signals to the pins C17, D18, E18, and G17.
@@ -52,7 +52,7 @@ The design operates as follows:
 - Run the design and microblazes on the board  
 
 
-##Repository Structure
+## Repository Structure
 
 * src: Vivado project files
   * project_1: Main project 
