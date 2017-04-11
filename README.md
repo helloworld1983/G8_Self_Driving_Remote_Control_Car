@@ -61,35 +61,35 @@ Repository Structure
 ###########################################################################
 
 - src: Vivado project files
-  - project_1: Main project 
-    - project_1.sdk: software files 
-      - MB0_n: SDK project for wifi microblaze 
-        - src/main.cc: Contains all relevant code for this component
-      - MB1: SDK project for path-finding microblaze
-        - src/hellowworld.c: Contains all relevant code for this component
-    - project_1.srcs: hardware source files
+--- project_1: Main project 
+----- project_1.sdk: software files 
+------- MB0_n: SDK project for wifi microblaze 
+--------- src/main.cc: Contains all relevant code for this component
+------- MB1: SDK project for path-finding microblaze
+--------- src/hellowworld.c: Contains all relevant code for this component
+----- project_1.srcs: hardware source files
     
-  - img_proc_full: Packaged project containing the image processing IP 
-    - jpeg.srcs/sim_1/imports/vhdl/jpeg_testbench.vhd: 
-      - sources_1: verilog & vhdl source files
-        - stream_jpg_yy_nv_mn_v1_0.v: top-level source file for sending data from 
+--- img_proc_full: Packaged project containing the image processing IP 
+----- jpeg.srcs/sim_1/imports/vhdl/jpeg_testbench.vhd: 
+------- sources_1: verilog & vhdl source files
+--------- stream_jpg_yy_nv_mn_v1_0.v: top-level source file for sending data from 
           this microblaze
-        - image_processor_wrapper.v: top-level file for testing only. It gives 
+--------- image_processor_wrapper.v: top-level file for testing only. It gives 
           input data from a pre-initialized bram. 
-        - image_processor.v: top-level file of image processor
-        - imports/mjpeg/: files for jpeg decoder
-        - edge_detector.v: self-explanatory
-        - vga_controller.v: controls RGB values to display
-        - vga_driver.vhd: IP from Rob Chapman, Altera University Program
-        - ip/: Xilinx ip 
+--------- image_processor.v: top-level file of image processor
+--------- imports/mjpeg/: files for jpeg decoder
+--------- edge_detector.v: self-explanatory
+--------- vga_controller.v: controls RGB values to display
+--------- vga_driver.vhd: IP from Rob Chapman, Altera University Program
+--------- ip/: Xilinx ip 
         
-      - sim_1: simulation files 
-        - imports/vhdl/jpeg_testbench.vhd: testbench for jpeg decoder
-        - wrapper_tb.v: testbench for image_processor_wrapper
+------- sim_1: simulation files 
+--------- imports/vhdl/jpeg_testbench.vhd: testbench for jpeg decoder
+--------- wrapper_tb.v: testbench for image_processor_wrapper
         
-  - PWM: Packaged project containing the PWM controller IP
+--- PWM: Packaged project containing the PWM controller IP
   
-  - vivado-library-master: Files needed for the wifi module
+--- vivado-library-master: Files needed for the wifi module
   
 - doc: Documentation including final report and presentation slides
 
